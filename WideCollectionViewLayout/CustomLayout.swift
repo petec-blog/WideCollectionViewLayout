@@ -6,7 +6,7 @@
 import UIKit
 
 
-class CustomLayout22: UICollectionViewFlowLayout {
+class CustomLayout: UICollectionViewFlowLayout {
     
     
     var numberOfItemsPerRow: Int = 3 {
