@@ -29,7 +29,7 @@ class CustomLayout: UICollectionViewFlowLayout {
             let totalSpacing = minimumInteritemSpacing * (itemsPerRow - 1.0)
             
             // Calculate how wide items should be
-            newItemSize.width = (collectionView.bounds.size.width - totalSpacing) / itemsPerRow
+            newItemSize.width = (collectionView.bounds.size.width - sectionInset.left - sectionInset.right - totalSpacing) / itemsPerRow
             
             // Use the aspect ratio of the current item size to determine how tall the items should be
             if itemSize.height > 0 {
